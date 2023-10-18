@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Add New Car</h1>
+
+    <form action="/add-item" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Name" class="form-control mb-2" required>
+        <textarea name="description" placeholder="Description" class="form-control mb-2"></textarea>
+        <input type="file" name="image" class="form-control-file mb-2">
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+</div>
+{% endblock %}

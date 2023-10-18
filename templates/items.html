@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Car Show</h1>
+
+    <form method="GET" action="/search">
+        <div class="input-group">
+            <input type="text" name="id" class="form-control" placeholder="Search by ID...">
+            <input type="text" name="keyword" class="form-control" placeholder="Search by Name...">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+
+    <a href="/items?sort_by=id" class="btn btn-secondary mb-2" style="margin-top: 10px;">Sort by ID</a>
+    <a href="/items?sort_by=name" class="btn btn-secondary mb-2" style="margin-top: 10px;">Sort by Name</a>
+    <a href="/add-item" class="btn btn-success mb-2" style="margin-top: 10px;">Add New Car</a>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+                {% if item.image %}
+                <img src="{{ url_for('static', filename='images/' + item.image) }}" alt="{{ item.name }}" width="100">
+                {% else %}
+                <p>No image available</p>
+                {% endif %}
+            </td>
+
+            <td>
+                <a href="/edit-item/{{ item.id }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/delete-item/{{ item.id }}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
