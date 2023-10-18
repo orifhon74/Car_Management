@@ -2,4 +2,4 @@
 
 Video Link
 
-https://pennstateoffice365-my.sharepoint.com/personal/omk5087_psu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fomk5087%5Fpsu%5Fedu%2FDocuments%2FScreen%20Recording%202023%2D10%2D18%20at%206%2E35%2E39%20PM%2Emov&referrer=OneDriveForBusiness&referrerScenario=OpenFile
+https://pennstateoffice365-my.sharepoint.com/:v:/g/personal/omk5087_psu_edu/Edp0uw7xRoROmKS_XiV4S2MBh4v1M9AVPZjhVd6cNP2nFQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=gj3x7F
