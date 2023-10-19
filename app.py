@@ -26,6 +26,7 @@ class Item(db.Model):
     description = db.Column(db.String(500), nullable=True)
     image = db.Column(db.String(255), nullable=True)
 
+# home page
 @app.route('/')
 def index():
     items = Item.query.all()
